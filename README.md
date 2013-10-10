@@ -8,6 +8,12 @@ $ chmod u+x sbt
 $ ./sbt test
 ```
 
+## Create Idea Project ##
+```
+$ cd scala-99
+$ ./sbt gen-idea
+```
+
 ## Contact ##
 
 - Owen Wood
