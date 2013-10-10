@@ -27,11 +27,23 @@ object build extends Build {
     "project",
     file("."),
     settings = gcsettings ++ Seq(gcTask)
-  ) aggregate problemOne
+  ) aggregate (problemOne, problemTwo, problemThree)
 
   lazy val problemOne = Project (
     "problem-one",
     file("problem-one"),
+    settings = gcsettings ++ Seq(gcTask) ++ Seq (libraryDependencies := testDependencies)
+  )
+
+  lazy val problemTwo = Project (
+    "problem-two",
+    file("problem-two"),
+    settings = gcsettings ++ Seq(gcTask) ++ Seq (libraryDependencies := testDependencies)
+  )
+
+  lazy val problemThree = Project (
+    "problem-three",
+    file("problem-three"),
     settings = gcsettings ++ Seq(gcTask) ++ Seq (libraryDependencies := testDependencies)
   )
 }
