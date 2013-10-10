@@ -5,8 +5,7 @@
 ```sh
 $ cd scala-99
 $ chmod u+x sbt
-$ ./sbt
-> +run
+$ ./sbt test
 ```
 
 ## Contact ##
