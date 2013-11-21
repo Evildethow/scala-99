@@ -1,6 +1,6 @@
 # scala-99 #
 
-## Build & run ##
+## Build & Run ##
 
 ```sh
 $ cd scala-99
